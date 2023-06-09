@@ -67,3 +67,14 @@ for (let i = 2; i <= 100; i += 2){
 for (let i = 20; i >= 1; i--){
     console.log(i)
 }
+
+
+function isSumNegativeOrPositive(x, y, z) {
+    let sumOfThree = x + y + z
+    if (sumOfThree > 0) {
+        console.log(`The sign is +`)
+    } else {
+        console.log(`The sign is -`)
+    }
+}
+isSumNegativeOrPositive(2, 5, 3,)

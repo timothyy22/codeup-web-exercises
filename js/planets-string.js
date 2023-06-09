@@ -11,7 +11,8 @@
      * planetsArray.
      * console.log planetsArray to check your work
      */
-
+    const planetBreak = planetsArray.join("<br/>")
+    console.log(planetBreak)
     let rommates = 'Timothy\ntalee\nIsabella\nTiff\nPerry\nNala'
     console.log(rommates)
     /**
