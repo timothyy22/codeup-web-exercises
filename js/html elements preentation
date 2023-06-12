@@ -1,0 +1,72 @@
+tables & nesting elements
+
+Nesting elements
+In HTML there are tags that contain content such as <p> this is an example </p>. inside these elements we typically have some content in there. If we wanted to emphasis some content within that element we would create a nested element. The parent, the original element, can hold other elements that could be applicable and further enhance your ideas. An example is a list, we use <ul> and </ul> to show that we are going to have an unordered list. A nested element in that list would be <li> </li> aka listed item where we would highlight content within that element. Another example of a nested element is using strong within a header, paragraph, table, ect. If you wanted a word to be bold within that text, you would use the tags applicable and close it around what you wanted bolded. Nesting elements is crucial to help improve the readability of your html code for you or other fellow developers. Remember you would want to close your nested element within your parent element, or your code will not work.
+
+
+tables
+A table in HTML consists of table cells inside rows and columns.
+A table is used for arranging data (such as text, images, links etc.) into the tabular design — basically, rows and columns.
+A table can be in a head or body
+
+The Table tag defines the overall table and the Table Row (TR) tag is used to build each row. The Table Data (TD) tag defines the actual data. Prior to HTML5, tables were often used for virtually every element on the page.
+
+Why Make a Table in HTML?
+       Tables allow the reader to see results or conclusions at a glance, rather than poring over text to find the numeric data or key points. Making a post or page more readable in this way can help attract and keep visitors on your site and ultimately improve their user experience.
+
+
+When to Use HTML Tables
+
+        When creating a blog post or web page, you might want to include data that isn’t best represented by text. Say you want to display a breakdown of the diversity of your workforce. Since this data would be too complicated or detailed to simply write out, you could use tables to organize and present it.
+
+
+Common reasons to NOT use a table
+        -Complex code
+            Table layouts generally involve more complex markup structures than proper layout techniques, in part because they often include multiple layers of nested tables. That means it is harder to write, maintain, and debug code for table layouts.
+        -Accessibility issue
+            Because of their complex markup structures, layouts built with tables pose accessibility issues for visually impaired users and other types of users with screen readers. The main issue is that content in a table layout doesn't always make sense when read left-to-right and top-to-bottom. Nested tables and various spans and attributes on table cells can also be difficult for a screen reader to parse.
+        -Lack of responsiveness
+            By default, tables are sized according to their content. So additional code is required to optimize table layouts for a variety of devices. Flexbox, CSS Grid, and Bootstrap, on the other hand, are all responsive layout models.
+
+How to make a table / examples:
+    beau will gladly provide some examples
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Table Example</title>
+</head>
+<body>
+<h1>TJB Restaurant</h1>
+<hr>
+<table>
+    <tr>
+        <th>Product</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td>Iced Tea</td>
+        <td>$5,000</td>
+    </tr>
+    <tr>
+        <td>Hamburger</td>
+        <td>$11,999 (plus tax)</td>
+    </tr>
+    <tr>
+        <td>Drink</td>
+        <td>$7,999</td>
+    </tr>
+    <tr>
+        <td>Straw</td>
+        <td>$3,000</td>
+    </tr>
+    <tr>
+        <td>Breathing</td>
+        <td>$1,000 Each respiration</td>
+    </tr>
+</table>
+</body>
+</html>

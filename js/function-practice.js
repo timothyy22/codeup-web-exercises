@@ -78,3 +78,26 @@ function isSumNegativeOrPositive(x, y, z) {
     }
 }
 isSumNegativeOrPositive(2, 5, 3,)
+
+
+function sumIsEqual (x, y ,z) {
+    if (typeof x == 'number') {
+        if (x + y === z) {
+            return true
+        } else {
+            return false
+        }
+    } else {
+        return false
+    }
+}
+
+
+
+
+console.log(sumIsEqual(1, 2, 3)) // returns true
+    console.log(sumIsEqual(2, 2, 4)) // returns true
+    console.log(sumIsEqual(10, 2, 12)) // returns true
+    console.log(sumIsEqual(10, false, 12)) // returns false
+    console.log(sumIsEqual('10', '2', 12) )// returns false
+    console.log(sumIsEqual('fred', 'bob,', 'hello')) // returns false
