@@ -1,4 +1,8 @@
+:root {
+    --chargersPowderBlue: #15C9C3FF;
+}
+
 
 .fancy-header{
-    color: plum;
+    color: var(--chargersPowderBlue);
 }
