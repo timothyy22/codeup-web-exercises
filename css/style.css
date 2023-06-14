@@ -6,3 +6,51 @@
 .fancy-header{
     color: var(--chargersPowderBlue);
 }
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    color: #00FFFFFF;
+    text-decoration: underline;
+
+}
+
+body {
+    background-color: gray;
+    font-family: 'Kablammo', cursive;
+
+}
+
+ul {
+    list-style: square;
+}
+
+td, tr {
+    padding: 10px;
+    font-family: 'Dancing Script', cursive;
+}
+
+    a:link {
+        color:red;
+    }
+
+    a:visited {
+        color:black;
+    }
+
+    a:hover {
+        color:blue;
+    }
+
+    a:active {
+        color:green;
+    }
+
+section {
+    background-image: url("../img/img5.jpg");
+    background-position: center;
+    background-size: 800px;
+}
