@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>media queries mini exercise</title>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/media-queries-practice.css">
+<style>
+    body {
+        background-color: blue;
+
+    }
+    .menu {
+        flex-direction: row;
+    }
+
+    @media screen and (min-width: 768px){
+        body {background-color: green}
+    }
+
+    @media screen and (min-width: 1024px){
+        body {background-color: red}
+    }
+
+    @media screen and (min-width: 1200px){
+        body {background-color: purple}
+    }
+
+</style>
+
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="container">
+            <div class="row align-center">
+                <div class="column menu">
+                    <h1>Hello World</h1>
+                </div>
+                <div class="column menu">
+                    <ul class="d-flex gap-10">
+                        <li>timothy</li>
+                        <li>bella</li>
+                        <li>talee</li>
+                        <li>tiff</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+
+    </header>
+</body>
+</html>

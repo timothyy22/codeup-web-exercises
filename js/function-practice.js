@@ -101,3 +101,30 @@ console.log(sumIsEqual(1, 2, 3)) // returns true
     console.log(sumIsEqual(10, false, 12)) // returns false
     console.log(sumIsEqual('10', '2', 12) )// returns false
     console.log(sumIsEqual('fred', 'bob,', 'hello')) // returns false
+
+
+
+
+    //================================= WARM UP
+
+//Write a function, returnUserObject, that takes in three String arguments: a username, password, and email. The function should return a user object with username, password and email properties.
+
+function returnUserObject(username, password, email) {
+    return {
+            username: username,
+            password: password,
+            email: email,
+        }
+
+}
+
+
+console.log(returnUserObject('jreich', 'password123', 'jreich@email.com')) // returns...
+
+// {
+//     username: 'jreich',
+//         password: 'password123',
+//     email: 'jreich@email.com'
+// }
+//
+// Assume all inputs are non-empty strings. The order of the properties does not matter.

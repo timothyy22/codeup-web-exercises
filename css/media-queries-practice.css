@@ -1,0 +1,12 @@
+.row {
+    max-width:  50%;
+}
+header.container {
+    position: relative;
+}
+ul {
+    list-style: none;
+}
+header h1 {
+    font-weight: 300;
+}
