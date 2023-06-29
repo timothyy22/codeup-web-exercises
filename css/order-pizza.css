@@ -1,0 +1,29 @@
+.container-fluid.ts-hero {
+    min-height: 30vh;
+    background-image: url("../img/pizza1.jpeg");
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+div.card-header {
+    background-color: #2c6efd;
+}
+
+#search-zip {
+    justify-content: left;
+}
+
+#main-h1 {
+    margin: 15px;
+}
+
+.card {
+    margin: 10px    ;
+}
+
+#store-btn {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}

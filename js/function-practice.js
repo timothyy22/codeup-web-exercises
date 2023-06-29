@@ -128,3 +128,162 @@ console.log(returnUserObject('jreich', 'password123', 'jreich@email.com')) // re
 // }
 //
 // Assume all inputs are non-empty strings. The order of the properties does not matter.
+
+
+function returnProduct (nums) {
+    let product = 1;
+    for (let num of nums) {
+        product *= num;
+    }
+    return product
+}
+// let product = 1
+
+// // nums.forEach((num) => {
+// //     product *= num;
+// // })
+//
+// for (let i = 0; i < nums.length; i+= 1) {
+//     product *= nums[i]
+//     return
+// }
+//
+
+
+//
+//
+// function returnProduct (num) {
+//     let i = 0
+//     while (i > 3, i++)
+// }
+console.log(returnProduct([3,3,3]))
+
+
+const salesData = [
+    {
+        month: 'January',
+        totalItemsSold: 0
+    },
+    {
+        month: 'February',
+        totalItemsSold: 5
+    },
+    {
+        month: 'March',
+        totalItemsSold: 2
+    },
+    {
+        month: 'April',
+        totalItemsSold: 10
+    },
+    {
+        month: 'May',
+        totalItemsSold: 30
+    }
+];
+
+
+// function returnTotalSales (salesData) {
+//     let totalSales = 0;
+//     for (let num of salesData) {
+//         totalSales = totalSales + num.totalItemsSold;
+//     }
+//     return totalSales
+// }
+
+let sum = 0
+function returnTotalSales (salesData) {
+    let sum = 0
+    for (let i = 0; i < salesData.length; i += 1) {
+        sum += salesData[i].totalItemsSold
+    }
+    return sum;
+}
+
+console.log(returnTotalSales(salesData));
+
+
+
+function returnAvgSales (salesData) {
+    let sum = 0
+    for (let i = 0; i < salesData.length; i +=1) {
+        sum += salesData[i].totalItemsSold / salesData.length
+    }
+    return sum;
+}
+
+console.log(returnAvgSales(salesData));
+
+
+
+// ================================= WARM UP
+//
+// Create a function, returnAdmins, that takes in an array of user objects
+// and returns an array of only the admin user objects. Assume the array
+// has at least one user object and all elements have an isAdmin property.
+//
+//     Example:
+
+
+const users = [
+
+    {
+        username: 'fred123',
+        password: 'letmein',
+        email: 'fred123@email.com',
+        isAdmin: true
+    },
+    {
+        username: 'cindy123',
+        password: 'hello123',
+        email: 'cindy123@email.com',
+        isAdmin: false
+    },
+    {
+        username: 'kathy123',
+        password: 'letmein',
+        email: 'kathy123@email.com',
+        isAdmin: true
+    },
+    {
+        username: 'kyle123',
+        password: 'letmein',
+        email: 'kyle123@email.com',
+        isAdmin: false
+    }
+]
+
+function returnAdmins(users) {
+    const admin = []
+    for (let i = 0; i < users.length; i +=1) {
+        if (users[i].isAdmin === true) {
+            admin.push(users[i])
+        }
+    }
+    return admin
+}
+
+
+console.log(returnAdmins(users));
+
+
+/*
+
+
+[
+
+    {
+        username: 'fred123',
+        password: 'letmein',
+        email: 'fred123@email.com',
+        isAdmin: true
+    },
+    {
+        username: 'kathy123',
+        password: 'letmein',
+        email: 'kathy123@email.com',
+        isAdmin: true
+    }
+]
+
+*/
