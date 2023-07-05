@@ -287,3 +287,102 @@ console.log(returnAdmins(users));
 ]
 
 */
+
+
+
+// ================================= WARM UP
+//
+// Write a function that takes a neighborhood object and determines if it is desirable. A neighborhood is desirable.
+//     If the median home price is less than 300000, crime rates are low, and the total rating of schools is at least 24.
+// The function should return true if the neighborhood object is desireable and false otherwise.
+
+// example data...
+
+
+function desiredNeighborhood(neighborhood) {
+    if (neighborhood.medianHomePrice < 300000 && neighborhood.crimeRate === "low" && neighborhood.schools >= 24) {
+        return true
+    }else {
+        return false
+    }
+}
+
+
+
+    const neighborhood1 = {
+    neighborhood: "Lovely Estates",
+    medianHomePrice: 280000,
+    pool: true,
+    tennis: false,
+    crimeRate: "low",
+    schools: 22
+};
+
+const neighborhood2 = {
+    neighborhood: "Luminous Estates",
+    medianHomePrice: 270000,
+    pool: true,
+    tennis: false,
+    crimeRate: "high",
+    schools: 24
+}
+
+const neighborhood3 = {
+    neighborhood: "Oak Mountain",
+    medianHomePrice: 290000,
+    pool: false,
+    tennis: false,
+    crimeRate: "low",
+    schools: 24
+}
+
+const neighborhood4 = {
+    neighborhood: "Ginormous Acres",
+    medianHomePrice: 350000,
+    pool: true,
+    tennis: true,
+    crimeRate: "low",
+    schools: 27
+}
+
+
+console.log(desiredNeighborhood(neighborhood4));
+
+
+
+// ================================= WARM UP
+//
+//
+// Write a function, returnLargestStudentCount, that takes in an array of classes returns the number of students in the largest class.
+// Assume at least one class object will be present in the input array with students property set to a valid positive integer.
+
+let classes = [
+    {class: "6th grade history", students: 18},
+    {class: "7th grade history", students: 20},
+    {class: "8th grade history", students: 22},
+    {class: "4th grade history", students: 30},
+    {class: "5th grade history", students: 29},
+    {class: "10th grade history", students: 25}
+];
+
+
+function returnLargestStudentCount(classes) {
+    let largest = 0
+    let number = 0
+    for (let i = 0; i < classes.length; i++) {
+        number = classes[i].students;
+        largest = Math.max(largest, number)
+    }
+    return largest
+}
+
+//     let classes = [
+//     {class: "6th grade history", students: 18},
+//     {class: "7th grade history", students: 20},
+//     {class: "8th grade history", students: 22},
+//     {class: "4th grade history", students: 30},
+//     {class: "10th grade history", students: 25}
+// ];
+
+
+console.log(returnLargestStudentCount(classes)); // returns 30
