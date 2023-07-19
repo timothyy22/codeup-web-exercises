@@ -808,3 +808,29 @@ function harryPotter(hogwartsArray) {
 console.log(harryPotter(hogwartsarray))
 
 
+// Write a function called removeEvens that takes an array of numbers
+// And removes any even number from the array
+
+// Examples:
+
+//const input = [1, 3, 2, 13, 74, 33]
+// Expected Output: [1, 3, 13, 33]
+const input = [62, 3, 2, 8, 531, 7]
+// Expected Output: [3, 531, 7]
+
+function removeEven(numbersArray) {
+    let newNumbersArray = []
+    for (let i = 0; i < numbersArray.length; i++) {
+        if (numbersArray[i] % 2 !== 0) {
+            newNumbersArray.push(numbersArray[i])
+        }
+    }
+    return newNumbersArray
+}
+
+console.log(removeEven([3, 74, 89, 10, 224, 3219, 22, 7]))
+
+
+
+
+
