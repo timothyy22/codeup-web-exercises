@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Manipulation Warmups</title>
+</head>
+<body>
+
+<h3>The sum is: <span id="sum-output">0</span></h3>
+
+<label for="number">Number</label>
+<input id="number" type="number" name="number" min="0" max="5" value="0">
+<button id="add-btn">Add</button>
+
+<!--  Include the CDN script for jQuery below -->
+<script
+        src="http://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+<script>
+
+  "use strict";
+
+  // TODO: add the needed JS so that the number selected in the number input will be added to the number in the span when the button is clicked
+
+  // let sumOutput = document.getElementById('sum-output')
+  // let selectedNumber = document.getElementById('number')
+  // let returnedNumber = selectedNumber.value
+  //
+  // function addInput() {
+  //   console.log('click')
+  //   console.log(returnedNumber)
+  // }
+  //
+  // document.querySelector('#add-btn').addEventListener('click', ()=>{
+  //   addInput();
+  // })
+
+  //CLICK BUTTON AND CONSOLE LOG 'CLICK'
+  //CLICK BUTTON AND IT LOGS THE VALUE IN THE INPUT
+  //CLICK BUTTIN AND IT LOGS THE SUM OF THE CURRENT  #SUM-OBJECT VALUE AND THE INPUT
+  //CLICK BUTTON AND IT REPLACES SUM-OUTPUT AND THE SUM OVER SUM-OUTPUT AND INOYR
+
+  $('#add-btn').on('click', () => {
+    const input = $('#number').val();
+    const output = $('#sum-output').text()
+    const total = (input * 1) + (output * 1)
+    // or const total = parseInt(input) + parseInt(output)
+    $('#sum-output').text(total)
+  })
+
+</script>
+
+</body>
+
+</html>

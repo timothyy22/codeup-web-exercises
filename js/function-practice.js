@@ -831,6 +831,14 @@ function removeEven(numbersArray) {
 console.log(removeEven([3, 74, 89, 10, 224, 3219, 22, 7]))
 
 
+const input7 = [1, 2, 3, 4, 5];
+const map = input7.map(x => x * x)
+console.log(map)
+
+
+
+
+
 
 
 

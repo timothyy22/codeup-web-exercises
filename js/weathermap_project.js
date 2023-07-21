@@ -4,31 +4,24 @@ $(() => {
     const map = initializeMap()
     let citySearch = document.querySelector('#searchBox')
     let lat = map.getCenter()
+    console.log(lat.lng)
 
 
     function printAddress(map) {
         const coords = map.getCenter()
         reverseGeocode(coords, MAPBOX_TOKEN).then((data) => {
-            if (citySearch.value === '') {
                 document.querySelector('h1').innerHTML = `${data}`
-            } else {
-                document.querySelector('h1').innerHTML = citySearch.value()
 
-            }
+
         })
     }
 
-    // function createMarker() {
-    //     return new mapboxgl.Marker()
-    //         .setLngLat([lat.lat, lat.lng])
-    //         .addTo(map);
-    // }
-    // createMarker()
-    //NEED SO DATA CAN LOAD ON START UP
+
+
 
     updateTodaysWeather();
     updateFiveDays();
-    // weatherIcons();
+
     function goToInput() {
         let searchedCity = citySearch.value
         geocode(searchedCity, MAPBOX_TOKEN).then((data) => {
@@ -41,23 +34,6 @@ $(() => {
 
     }
 
-    //
-    // $.get("http://api.openweathermap.org/data/2.5/onecall", {
-    //     APPID: openWeather,
-    //     lat: lat.lat,
-    //     lon: lat.lng,
-    //     units: "imperial"
-    // }).done(function (data) {
-    //     console.log('The entire response 1:', data);
-    //     console.log('Diving in - here is current information: ', data.current);
-    //     console.log('A step further - information for tomorrow: ', data.daily[1]);
-    //     document.getElementById('currentDate').innerHTML = `${Date(data.current.dt)}`
-    //     document.getElementById('currentTemp').innerHTML = `tempeture: ${data.current.temp}°F`
-    //     // document.getElementById('currentWeatherIcon').innerHTML = `${data.list[0].weather[0].icon}`
-    //     // console.log(data.list[0])
-    //     // document.getElementById('dayOneMax').innerHTML = `${minMaxTemps[0].max}`
-    //
-    // });
 
      function updateFiveDays () {
          let lat = map.getCenter()
